@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1></h1>
+    <header>
+        <h1><img src="img/logo-encriptado.jpg" class="logo"></h1>
+    </header>
+
+    <div class="container-General">
+        <div class="container-message">
+            <textarea class="message" type="text" placeholder="Ingresa el texto aqui"></textarea>
+        </div>
+        <di>
+            <img src="" alt="">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </di>
+        <div class="container-button">
+            <button class="encrypt">Encriptar</button>
+            <button class="Decrypt">Desencriptar</button>
+        </div>
+
+
+        <div class="container-encriptado">
+            <div class="container-encriptado-codigo">
+                <img src="./img/Muñeco.png" alt="">
+                <input class="message-encriptado"type="text">
+            </div>
+            <button class="button-copy">Copiar</button>
+        </div>
+
+    </div>
     <script>src="app.js"</script>
 </body>
+
 </html>
