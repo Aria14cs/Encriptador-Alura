@@ -1,75 +1,327 @@
 * {
     margin: 0;
+    padding: 0;
 }
+body{
+    overflow: hidden;
 
-body {
+}
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     background: #F3F5FC;
-
+    font-family: "inter";
+      overflow: hidden;
 }
-
-
-.container-General {
-    width: 940px;
-    height: auto;
-    margin: 0 auto;
-}
-
 
 .logo {
-    max-width: 200px;
-    max-height: 100px;
-    border-radius: 10px;
+    padding-top: 5px;
+    margin-left: 10px;
+    width: 5%;
+    /* border-radius: 10px 10px 10px 10px; */
 }
 
-
-.container-message textarea {
-    text-align: center;
-    width: 577px;
-    height: 48px;
-
-}
-
-.message {}
-
-.container-button {
-    text-align: center;
+.message {
     position: absolute;
+    width: 42%;
+    height: 50%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
+}
 
-    margin-top: 100px;
+.message::placeholder {
+    color: #0a0a0a;
 
 }
 
-.encrypt {
-    background: #0A3871;
-    border-radius: 5px;
-    font-size: 24px;
+.message:focus,
+.message:active {
+    border: none;
+    outline: none;
+
 }
 
-.Decrypt {
-    background: #D8DFE8;
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 70%;
 
-    border-radius: 5px;
-    font-size: 24px;
 }
 
+.terminos p {
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 75%;
+}
+
+.button-encrypt {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0b88dd;
+    border-radius: 24px;
+    font-style: 18px;
+    line-height: 19px;
+    font-size: 18px;
+    text-align: center;
+    color: #f8f9fa;
+}
+
+.button-Decrypt {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px sole #0a3871;
+    border-radius: 24px;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #0a0a0a;
+}
+
+
+.button-encrypt:hover,
+.button-Decrypt:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+.button2 {
+    
+    padding: 1% 0;
+    position: absolute;
+    width: 100%;
+    top: 89%;
+    left: 25%;
+}
+.button-copy{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 50%;
+    background: #d8dfe8;
+    border: 1px sole #0a3871;
+    border-radius: 24px;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #0a0a0a;
+    position: absolute;
+}
+
+.button-copy:hover {
+    margin: 0.3%;
+   
+}
+
+
+
+
+
+
+/* contener de mensaje encriptado */
 .container-encriptado {
-    text-align: center;
+    display: flex;
+    
+    justify-content: center;
     position: absolute;
-    border: 2px solid white;
-    border-radius: 10px;
-    right: 0;
-}
-
-.container-encriptado-codigo {
-    background: white;
-    width: 400px;
-
+    width: 30%;
+    height: 80%;
+    left: 60%;
+    top:5%;
+    background: #d8dfe8;
+    box-shadow: 0px 32px 32px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
 
 }
 
 .message-encriptado {
-    width: 336px;
-    height: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+
 }
 
-.button-copy {}
+.message-encriptado2 {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    /* text-align: center; */
+    border: none;
+
+}
+
+
+
+.message-encriptadp h2 {
+    width: 60%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a;
+
+}
+
+.message-encriptadp p {
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495055;
+}
+
+.container-encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+
+}
+
+
+@media  (max-width:57em) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+   .logo{
+    width: 10%;
+   }
+    .container-message {
+        width: 100%;
+
+    }
+
+    .message {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 55%;
+    }
+
+    .terminos p {
+        font-size: 16px;
+    }
+
+    .button{
+        display: inline-block;
+        flex-direction: row;
+        width: 100%;
+        left: 10%;
+        top: 60%;
+    }
+    .button2 {
+        width: 80%;
+        left: 10%;
+        top: 98%;
+    }
+
+    .button-encrypt,
+    .button-Decrypt{
+        width: 80%;
+        border-radius: 16px;
+    }
+    .button-copy {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .button-encrypt:hover,
+    .button-Decrypt:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .button-copy:hover {
+        margin: 0.3%;
+        
+    }
+    .container-encriptado {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 70%;
+
+    }
+
+    .message-encriptadp {
+        width: 100%;
+        top: 5%;
+
+    }
+
+    .container-encriptado img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+
+    }
+
+}
