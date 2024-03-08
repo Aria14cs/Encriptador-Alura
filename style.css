@@ -5,6 +5,7 @@
 body{
     overflow: hidden;
 
+
 }
 main {
     position: relative;
@@ -15,11 +16,14 @@ main {
       overflow: hidden;
 }
 
+header{
+    background: linear-gradient(to bottom, #F3F5FC, #5eb9f5);
+}
 .logo {
     padding-top: 5px;
     margin-left: 10px;
-    width: 5%;
-    /* border-radius: 10px 10px 10px 10px; */
+    width: 10%;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .message {
@@ -32,6 +36,7 @@ main {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    font-family: "inter";
     line-height: 150%;
     background-color: #F3F5FC;
 }
@@ -58,19 +63,21 @@ main {
     width: 80%;
     left: 12%;
     top: 70%;
+ 
 
 }
 
 .terminos p {
     font-style: normal;
     font-weight: 400px;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
     flex: none;
     order: 1;
     flex-grow: 0;
+    font-family: "inter";
 
 
 }
@@ -84,6 +91,8 @@ main {
     width: 80%;
     left: 12%;
     top: 75%;
+    font-family: "inter";
+  
 }
 
 .button-encrypt {
@@ -99,6 +108,7 @@ main {
     font-size: 18px;
     text-align: center;
     color: #f8f9fa;
+    font-family: "inter";
 }
 
 .button-Decrypt {
@@ -117,6 +127,7 @@ main {
     font-size: 18px;
     line-height: 19px;
     color: #0a0a0a;
+    font-family: "inter";
 }
 
 
@@ -127,22 +138,28 @@ main {
     padding: 1.8%;
 }
 .button2 {
-    
-    padding: 1% 0;
-    position: absolute;
-    width: 100%;
-    top: 89%;
-    left: 25%;
-}
-.button-copy{
-    box-sizing: border-box;
+
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 3% 0;
+    position: absolute;
+    width: 80%;
+    left: 15%;
+    top: 83%;
+    font-family: "inter";
+    
+    
+}
+.button-copy{
+    /* box-sizing: border-box; */
+    display: flex;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 50%;
+    width: 90%;
     background: #d8dfe8;
     border: 1px sole #0a3871;
     border-radius: 24px;
@@ -151,6 +168,7 @@ main {
     line-height: 40px;
     color: #0a0a0a;
     position: absolute;
+    font-family: "inter";
 }
 
 .button-copy:hover {
@@ -170,7 +188,7 @@ main {
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 80%;
+    height: 85%;
     left: 60%;
     top:5%;
     background: #d8dfe8;
@@ -193,19 +211,24 @@ main {
 
 }
 
-.message-encriptado2 {
+.textarea_encriptado2,.message_encriptado2 {
     display: flex;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    padding: 1%;
-    gap: 16px;
-    position: absolute;
-    width: 100%;
-    top: 15%;
-    /* text-align: center; */
+   margin-top: 5%;
+    width: 90%;
+    height: 85%;
+    /* left: 60%; */
+    top:5%;
+    background: #d8dfe8;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "inter";
+    /* border-radius: 32px; */
+    font-family: "inter";
     border: none;
+}
 
+.message_encriptado2:focus{
+    outline: none;
 }
 
 
@@ -240,51 +263,45 @@ main {
 }
 
 
-@media  (max-width:57em) {
+@media (max-width: 57em) {
     .main {
         display: flex;
         flex-direction: row;
     }
-   .logo{
-    width: 10%;
-   }
+    .logo {
+        width: 10%;
+    }
     .container-message {
         width: 100%;
-
     }
-
     .message {
-        width: 80%;
-        height: 60%;
+        width: 70%;
+        height: 40%;
         left: 10%;
         top: 5%;
     }
-
     .terminos {
         width: 80%;
         left: 10%;
-        top: 55%;
+        top: 45%;
     }
-
     .terminos p {
         font-size: 16px;
     }
-
-    .button{
+    .button {
         display: inline-block;
         flex-direction: row;
         width: 100%;
         left: 10%;
-        top: 60%;
+        top: 50%;
     }
     .button2 {
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        left: 2%;
         top: 98%;
     }
-
     .button-encrypt,
-    .button-Decrypt{
+    .button-Decrypt {
         width: 80%;
         border-radius: 16px;
     }
@@ -292,36 +309,29 @@ main {
         width: 100%;
         border-radius: 16px;
     }
-
     .button-encrypt:hover,
-    .button-Decrypt:hover{
+    .button-Decrypt:hover {
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
     }
     .button-copy:hover {
-        margin: 0.3%;
-        
+        margin: 0.5%;
     }
     .container-encriptado {
-        width: 80%;
-        height: 15%;
+        width: 85%;
+        height: 25%;
         left: 10%;
-        top: 70%;
-
+        top: 62%;
+        font-size: 16px;
     }
-
-    .message-encriptadp {
+    .message-encriptado {
         width: 100%;
         top: 5%;
-
     }
-
     .container-encriptado img {
         top: 0;
         display: none;
         visibility: hidden;
-
     }
-
 }
