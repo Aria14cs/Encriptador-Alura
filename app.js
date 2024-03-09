@@ -136,16 +136,3 @@ function desencriptar(message_Desencriptado) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
